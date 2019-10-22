@@ -170,9 +170,9 @@
             },
             resetFields() {
                 this.event_name = '';
-                this.start = this.moment().format('YYYY-MM-DD');
-                this.end = this.moment().format('YYYY-MM-DD');
-                this.color = '#2196F3';
+                this.start =this.moment().startOf('month').format('YYYY-MM-DD');
+                this.end = this.moment().endOf('month').format('YYYY-MM-DD');
+                this.color = '#04ce04b8';
                 this.days =  [];
             }
         }
