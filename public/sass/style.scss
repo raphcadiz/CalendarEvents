@@ -1,0 +1,108 @@
+html {
+	height: 100vh;
+}
+
+html, body {
+	background-color: #333 !important;
+}
+
+.alert {
+    margin-bottom: 0 !important;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+#app {
+    #calendar-area {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        width: 100%;
+        border: 1px solid #efefef;
+        background-color: #efefef;
+        border-radius: 5px;
+
+        #date-picker {
+            .v-application--wrap {
+                min-height: auto !important;
+            }
+            .v-messages.theme--light {
+                display: none;
+            }
+        }
+    }
+    .clear-events-link {
+        text-decoration: none;
+        color: #b81a29;
+        font-weight: bold;
+
+        &:hover {
+            color: #f72c40;
+        }
+        &:active {
+            color: #8c0b17;
+        }
+    }
+}
+
+#date-picker-fields {
+    background-color: transparent;
+
+    .v-application--wrap {
+        flex-direction: inherit;
+
+        .v-input {
+            margin-top: -16px;
+        }
+    }
+    input {
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+    }
+}
+
+#days-fields {
+    .v-input--selection-controls.v-input .v-label {
+        top: 4px;
+        margin-right: 2px;
+    }
+    .v-input--selection-controls.v-input {
+        margin-top: 0;
+        display: inline-block;
+    }
+    .v-input--selection-controls__input {
+        margin-right: 0;
+    }
+    .v-input__slot {
+        margin-bottom: 0;
+    }
+}
+
+button.submitting {
+    pointer-events: none;
+    opacity: .6;
+
+    .fa {
+        font-size: 12px;
+        margin-right: 4px;
+    }
+}
+
+.v-past, .v-future {
+    button {
+        background-color: transparent !important;
+    }
+}
+
+.v-present {
+    button {
+        background-color: #1867c0 !important;
+        border-color: #1867c0 !important;
+        color: #fff !important;
+    }
+}
